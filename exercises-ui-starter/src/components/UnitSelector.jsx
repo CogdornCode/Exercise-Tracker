@@ -5,7 +5,6 @@ export default function UnitSelector({ value, onChange }) {
           <option value="lbs">lbs</option>
           <option value="kgs">kgs</option>
           <option value="miles">miles</option>
-          <option value="km">km</option>
         </select>
       </label>
   );

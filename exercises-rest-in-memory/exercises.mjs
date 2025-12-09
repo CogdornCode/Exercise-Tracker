@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const exerciseSchema = new mongoose.Schema({
   name: { type: String, required: true },
-  reps: { type: Number, required: true, min: 0 },
+  reps: { type: Number, required: true, min: 1 },
   weight: { type: Number, required: true, min: 0 },
   unit: { type: String, enum: ['lbs', 'kgs', 'miles'], required: true },
   date: { type: Date, default: Date.now }

@@ -5,7 +5,7 @@ import Navbar from '../components/Navigation';
 
 export const AddExercisePage = () => {
   const [name, setName] = useState('');
-  const [reps, setReps] = useState(0);
+  const [reps, setReps] = useState(1);
   const [weight, setWeight] = useState(0);
   const [unit, setUnit] = useState('lbs');
   const [date, setDate] = useState('');
