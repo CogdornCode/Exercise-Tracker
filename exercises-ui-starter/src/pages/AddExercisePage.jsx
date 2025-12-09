@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import UnitSelector from '../components/UnitSelector';
+import Navbar from '../components/Navigation';
 
 export const AddExercisePage = () => {
   const [name, setName] = useState('');
@@ -29,7 +30,9 @@ export const AddExercisePage = () => {
 
   return (
     <div>
-      <h1>Add Exercise</h1>
+      <h1>Chris' Exercise Log!</h1>
+      <Navbar />
+      <h2>Add Exercise</h2>
       <p>
         <label>
           Name:

@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ExerciseTable from '../components/ExerciseTable';
+import Navbar from '../components/Navigation';
 
 export default function HomePage() {
   const [exercises, setExercises] = useState([]);
@@ -17,9 +18,10 @@ export default function HomePage() {
 
   return (
     <div>
+      <h1>Chris' Exercise Log!</h1>
+      <Navbar />
       <h2>List of Exercises</h2>
-      <ExerciseTable exercises={exercises} />
-      <Link to="/add-exercise">Add a new exercise</Link>
+       <ExerciseTable exercises={exercises} setExercises={setExercises} />
     </div>
   );
 }

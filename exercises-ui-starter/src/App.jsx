@@ -12,9 +12,12 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage/>}></Route>
             <Route path="/add-exercise" element={ <AddExercisePage />}></Route>
-            <Route path="/edit-exercise" element={ <EditExercisePage />}></Route>
+            <Route path="/edit-exercise/:id" element={ <EditExercisePage />}></Route>
           </Routes>
         </Router>
+        <footer>
+          <p class="copyright">© Chris Chea 2025</p>
+        </footer>
     </div>
   );
 }

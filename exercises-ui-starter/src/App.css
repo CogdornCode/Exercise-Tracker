@@ -3,12 +3,13 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #282c34;
+  background-color: #cdc3a2;
+  color: #ffffff;
 }
 
 .app {
-  background-color: #282c34;
-  color: white;
+  background-color: #cdc3a2;
+  color: rgb(0, 0, 0);
 }
 
 
@@ -24,6 +25,3 @@
   margin-top: 16px;
 }
 
-a {
-  color: white;
-}
